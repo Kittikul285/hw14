@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app{
+
+  background-image: url("https://scontent.fbkk29-7.fna.fbcdn.net/v/t39.30808-6/273345368_10161103524022573_3627368004043096399_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeHapD2Z-0rFnDN8iDKEJlysezM4upa_0wJ7Mzi6lr_TAtwwRujgh4FuIeRXm9n_Z0KEFB3SVL0I7FkuhvympUKX&_nc_ohc=xexh3n3y7KkAX-Wv-AK&_nc_ht=scontent.fbkk29-7.fna&oh=00_AfDUc80_aywva0CLSQ53g1e2WevTJYWEyHs9PCMEQkNe8g&oe=65A5C157");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  
+}
+
+.todo-app{
+  background-color: rgba(50, 46, 46, 0.256);
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+}
+
+.dashboard ,.h2{
+  background-color: red;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 8px;
+  color: white;
+  
+}
+
+.form-add-todo, .todo-edit-form {
+  background-color:rgba(128, 128, 128, 0.277);
+  padding: 8px 16px;
+  display: flex;
+  gap: 2px;
+}
+
+.form-add-todo > input, .todo-edit-form > [type=text]{
+  flex-grow : 8;
+  font-size: large;
+  padding: 4px 8px;
+}
+
+.form-add-todo > button {
+  flex-grow : 2;
+}
+
+.todo-container{
+  /* border: 1px dashed lightgreen; */
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.todo-item{
+  background-color: white;
+  padding: 4px 8px;
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+
+}
+
+.todo-item p{
+  width: 80%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.todo-item .btn-group{
+  display: flex;
+  gap: 4px;
+  
+}
+
+
+.todo-item .btn-group button{
+  border: 1px solid silver;
+  padding: 2px 4px;
+  cursor: pointer;
+  background-color: red;
+  border-radius: 20px;
+  color: white;
+  
+}
+
+.job-done {
+  text-decoration: line-through;
+  color: red;
+}
